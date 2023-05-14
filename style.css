@@ -1,0 +1,158 @@
+ @font-face {
+     font-family: "SignikaNegative";
+     src: local("SignikaNegative"),
+         url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Signika+Negative:wght@700&display=swap') format("opentype");
+ }
+
+ body {
+     background-repeat: no-repeat;
+     background-image: url("img/fondoIndex.PNG");
+     background-size: cover;
+ }
+
+ footer {
+     border-top-style: dashed !important;
+     width: 100%;
+     height: 15rem;
+     display: flex;
+     margin-top: 5rem;
+     justify-content: space-around;
+     /* padding-left: 4rem;
+     padding-right: 4rem; */
+ }
+
+ footer iframe {
+     align-self: center;
+     /* margin-left: 4rem; */
+ }
+
+ .redes {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .redes div {
+     display: flex;
+ }
+
+
+ /* card */
+ .cardForm {
+     width: 25rem;
+     background-color: #d5d5d530 !important;
+ }
+
+
+ /* button */
+
+ #bntAction {
+     width: 15rem;
+     height: 3rem;
+     background-color: rgb(13 110 253 / 60%);
+     ;
+ }
+
+ #Registrar {
+     background-color: rgb(13 110 253 / 60%);
+     width: 8rem;
+     height: 3rem;
+ }
+
+ /* text */
+ #title {
+     font-family: cursive;
+     font-size: 5rem;
+ }
+
+ .fontSizeP {
+     font-size: 1.5rem;
+     margin-bottom: 0;
+ }
+
+ .homeContainer p {
+     font-size: 1.5rem;
+ }
+
+ .beneficios p {
+     font-weight: 700;
+
+ }
+
+
+ /* Container */
+
+ .homeContainer {
+     height: calc(100% - 106px);
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .registerContainer {
+     height: calc(100% - 106px);
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ .beneficios {
+     margin-top: 4rem !important;
+     width: 45rem;
+     display: flex;
+     justify-content: space-around;
+     margin: auto;
+     height: 15rem;
+     padding: 1rem;
+     border-color: #f0f8ff6b !important;
+     /*   */
+ }
+
+ .beneficios div {
+     width: 15rem;
+     height: 15rem;
+ }
+
+ .menu div {
+     margin-top: 1rem;
+     background-color: transparent;
+     border-color: #f0f8ff6b !important;
+ }
+
+ /* input */
+
+ .checkboxModoHeader {
+     width: 4rem;
+     height: 2rem;
+     margin-right: 1rem;
+ }
+
+ /* colores */
+ .claro {
+     background-color: white !important;
+ }
+
+ .oscuro {
+     background-color: rgb(21, 19, 19) !important;
+ }
+
+ .letraClara {
+     text-decoration: white !important;
+ }
+
+ .letraOcura {
+     text-decoration: rgb(39, 39, 39) !important;
+ }
+
+ /* img */
+ .pedidoYa {
+     align-self: center;
+
+ }
+
+ /* .imgHamburguesa{
+    border-image: fill;
+ } */
