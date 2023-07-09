@@ -22,69 +22,138 @@
                         </li>
                         <li class="nav-item ms-4 pt-2">
                             <a class="nav-link active p-0 mb-0" aria-current="page" href="index.html">
-                                <p class="fontSizeP text-white">Home</p>
+                                <p class="fontSizeP letraClara">Home</p>
                             </a>
                         </li>
-                        <li class="nav-item ms-4 pt-2">
-                            <a class="nav-link active p-0 mb-0" aria-current="page" href="menu.html">
-                                <p class="fontSizeP text-white">Menu</p>
+
+                        <li class="nav-item ms-4 pt-2" onclick="DireccionarABeneficios()">
+                            <a class="nav-link active p-0 mb-0" aria-current="page" href="#">
+                                <p class="fontSizeP letraClara">Beneficios</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4 pt-2" onclick=" () => DireccionarAMenu()">
+                            <a class="nav-link active p-0 mb-0" aria-current="page" href="#">
+                                <p class="fontSizeP letraClara">Menu</p>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="form-check form-switch pt-2">
-                    <input class="form-check-input checkboxModoHeader" type="checkbox" role="switch" checked
-                        onclick="CambiarDeModoOscuroAClaroODeOscuroAClaro()">
-                </div> -->
-                <button onclick="RedireccionarARegistro()" id="Registrar" class="btn border-3 mt-2">Registrar</button>
             </div>
         </nav>
     </header>
     <!-- titulo, subtitolo heroImage -->
     <section class="homeContainer">
         <div class="row me-0">
-            <div class="col-5 ps-5 d-flex flex-column justify-content-center">
-                <h1 id="title" class="text-white">Come las mejores hamburguesas del mercado</h1>
-                <h2 class="text-white">Al alcance de tus manos a muy buen costo.</h2>
+            <div class="col-6 ps-5 d-flex flex-column justify-content-center">
+                <h1 id="title" class="letraClara">Come las mejores hamburguesas del mercado</h1>
+                <h2 class="letraClara">Al alcance de tus manos a muy buen costo.</h2>
                 <!-- <h2 class="text-white">Calidad y precio</h2> -->
                 <!-- <h2 class="text-white">Nosotros le traemos la solucion</h2> -->
-                <p class=" pe-5 text-white mb-0">Registrate y accede a ofertas excusivas de tu restaurante mas cercano
+                <p class=" pe-5 letraClara mb-0">Registrate y accede a ofertas excusivas de tu restaurante mas cercano
                     desde
                     tu perfil</p>
                 <!-- call to action -->
-                <div class="d-flex w-100 justify-content-end">
-                    <button type="button" id="bntAction" class="btn btn-primary" data-toggle="modal"
-                        onclick="RedireccionarAMenu()" data-target="#myModal">Haz tu pedido</button>
+                <div class="d-flex w-100 justify-content-center mt-5 me-5">
+                    <button type="button" id="bntAction" class="btn btn-primary letraClara ms-5" data-toggle="modal"
+                        onclick="DireccionarAMenu()" data-target="#myModal">Menu Hamburguesas</button>
                     <!-- de aca vamos a la menu -->
                 </div>
             </div>
-            <div class="col-5 m-auto ">
+            <div class="col-6 m-auto ">
                 <img class="rounded-circle imgHamburguesa"
                     src="https://offloadmedia.feverup.com/sevillasecreta.co/wp-content/uploads/2022/09/14140055/BurgerFoodPorn.jpg"
-                    width="750">
+                    width="600">
 
             </div>
         </div>
     </section>
 
     <!-- Beneficios -->
-    <section class="beneficios border rounded border-secondary">
-        <div class="">
-            <img src="img/delivery.png" class="justify-self-center" width="50">
-            <p class="text-uppercase text-white">Delivery sin cargo</p>
-            <p class="text-white">Hurlingham , Caceres, Ituzaingo, Merlo</p>
+    <section id="seccionBeneficios" class="sectionBeneficios">
+        <p class="text-center letraClara display-4 "><strong><em>¿Por Que Comer Con Nosotros?</em></strong></p>
+        <div class="beneficiosContainer">
+            <div class="beneficios">
+                <img src="img/delivery.png">
+                <p class="text-uppercase titleCard letraClara">Delivery sin cargo</p>
+                <p class="letraClara">Contamos con este servcio en estas localidades de Hurlingham , Caseros, Ituzaingo,
+                    Castelar, Moron
+                </p>
+            </div>
+            <div class="beneficios">
+                <img src="img/burger.png">
+                <p class="text-uppercase titleCard letraClara">Promos Burgers</p>
+                <p class="letraClara">De los jueves a sabados tenes algunas hamburgesas con un 20% de descuento para que
+                    vengas a
+                    disfrutar con tus amigos
+                </p>
+            </div>
+            <div class="beneficios">
+                <img src="img/PINTA.png">
+                <p class="text-uppercase titleCard letraClara">2x1 en cervezas</p>
+                <p class="letraClara">los dias Viernes y sabados de 20hs a 23hs podes apovechar esta excelente promo,
+                    en cualquier tipo de cerveza que tengamos en nuestro local
+                </p>
+            </div>
         </div>
-        <div>
-            <img src="img/burger.png" alt="" width="50">
-            <p class="text-uppercase text-white">Promos Burgers</p>
-            <p class="text-white">De jueves a sabados tenes hamburgesas con un 30% de descuento para que vengas a
-                disfrutar con tus amigos
-            </p>
+    </section>
+    <!-- Menu  -->
+    <section id="menuHamburguesas" class="menu mx-5">
+        <p class="text-center letraClara display-4 mb-5 mt-4"><strong><em>Un poco de nuestras hamburguesas</em></strong>
+        </p>
+        <div class="card">
+            <div class="card-body d-flex p-2 ps-3">
+                <img src="img/hamburguesas map/Bajoncito.PNG" alt="">
+                <div class="mt-0 ms-2">
+                    <h4 class="letraClara">Bajoncito</h4>
+                    <p class="letraClara">Medallon de carne, cheddar, panceta ahumada y manteca de hierbas en pan
+                        gratinado acompañado por sus papas.</p>
+                    <p class="letraClara">$1590.00</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="img/PINTA.png" alt="" width="50">
-            <p class="text-uppercase text-white">2x1 en cervezas</p>
-            <p class="text-white">los Viernes y sabados de 20hs a 22hs podes apovechar esta excelente promo</p>
+        <div class="card ">
+            <div class="card-body d-flex p-2 ps-3">
+                <img src="img/hamburguesas map/DesembarcoConPapas.PNG" alt="">
+                <div class="mt-0 ms-2">
+                    <h4 class="letraClara">Desembarco con papas</h4>
+                    <p class="letraClara">Doble carne, doble cheddar, pulled pork, tomate, pepino agridulce, cebolla
+                        caramelizada, lechuga y BBQ Desembarco en pan brioche acompañado por sus papas.</p>
+                    <p class="letraClara">2790.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body d-flex p-2 ps-3">
+                <img src="img/hamburguesas map/HerculesConPapas.PNG">
+                <div class="mt-0 ms-2">
+                    <h4 class="letraClara">Hercules con papas</h4>
+                    <p class="letraClara">Doble carne, doble cheddar, cuádruple panceta, pepinos agridulces, lluvia de
+                        papas pays y salsa sapucay en pan brioche acompañado por sus papas</p>
+                    <p class="letraClara">2790.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body d-flex p-2 p-3">
+                <img src="img/hamburguesas map/PerlaNegraConPapas.PNG" alt="">
+                <div class="mt-0 ms-2">
+                    <h4 class="letraClara">Perla Negra con papas</h4>
+                    <p class="letraClara">Medallon de carne con jamón, queso cheddar, lechuga, tomate y ketchup casero
+                        en pan brioche gratinado acompañado por sus papas</p>
+                    <p class="letraClara">$1790.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body d-flex p-2 ps-3">
+                <img src="img/hamburguesas map/piedraBuena.PNG" alt="">
+                <div class="mt-0 ms-2">
+                    <h4 class="letraClara">Piedra Buenas</h4>
+                    <p class="letraClara">Bondiola braseada, cheddar, huevo, chimichanga, manteca de hierbas, barbacoa,
+                        cebolla crispy en pan de molde acompañada con sus papas.</p>
+                    <p class="letraClara">$2690.00</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
@@ -99,15 +168,15 @@
         <div class="redes">
             <div>
                 <img src="img/whatsapp.png" width="40">
-                <p class="text-white m-auto ms-2">11-5269-6257</p>
+                <p class="letraClara m-auto ms-2">11-5269-6257</p>
             </div>
             <div class="my-3">
                 <img src="img/instagram.png" width="40">
-                <p class="text-white m-auto ms-2">HamburgesasDelBajon</p>
+                <p class="letraClara m-auto ms-2">HamburgesasDelBajon</p>
             </div>
-            <div >
+            <div>
                 <img src="img/facebook.png" width="40">
-                <p class="text-white m-auto ms-2">HamburgesasDelBajon</p>
+                <p class="letraClara m-auto ms-2">HamburgesasDelBajon</p>
             </div>
         </div>
     </footer>

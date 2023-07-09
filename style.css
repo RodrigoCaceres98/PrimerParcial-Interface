@@ -8,7 +8,14 @@
      background-repeat: no-repeat;
      background-image: url("img/fondoIndex.PNG");
      background-size: cover;
+     width: 100%;
+     min-height: 100vh;
+     /* color: white; */
+     /*  */
  }
+    /* * {
+        color: white;
+    } */
 
  footer {
      border-top-style: dashed !important;
@@ -76,7 +83,7 @@
 
  .beneficios p {
      font-weight: 700;
-
+     font-size: larger;
  }
 
 
@@ -100,26 +107,49 @@
 
 
  .beneficios {
-     margin-top: 4rem !important;
-     width: 45rem;
+     width: 24rem;
      display: flex;
-     justify-content: space-around;
+     flex-direction: column;
      margin: auto;
-     height: 15rem;
-     padding: 1rem;
-     border-color: #f0f8ff6b !important;
-     /*   */
+     height: 22rem;
+     padding: 2.5rem;
+     border: 1px solid #ccc;
+     /* Establece el borde */
+     border-radius: 8px;
+     /* Establece la esquina redondeada */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
  }
 
- .beneficios div {
-     width: 15rem;
-     height: 15rem;
+ .titleCard {
+     font-size: 1.5rem;
  }
 
+ .beneficios p {
+     text-align: center;
+     margin-top: 1.5rem;
+     margin-bottom: 0;
+ }
+
+ .beneficios img {
+     align-self: center;
+     width: 4rem;
+ }
+
+ .sectionBeneficios {
+     margin-top: 2rem;
+     min-height: 90vh;
+ }
+
+ .beneficiosContainer {
+     display: flex;
+     margin-top: 7rem !important;
+     margin: auto;
+     width: 80rem;
+ }
  .menu div {
      margin-top: 1rem;
      background-color: transparent;
-     border-color: #f0f8ff6b !important;
+     border-color: #adb6be6b !important;
  }
 
  /* input */
@@ -140,11 +170,11 @@
  }
 
  .letraClara {
-     text-decoration: white !important;
+     color: white !important;
  }
 
  .letraOcura {
-     text-decoration: rgb(39, 39, 39) !important;
+     color: rgb(39, 39, 39) !important;
  }
 
  /* img */
