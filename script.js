@@ -7,22 +7,15 @@ const RedireccionarARegistro = () => {
 
 
 const DireccionarABeneficios = () => {
-    console.log("entro a la funcion beneficios")
-    const section = document.getElementById("seccionBeneficios"); // Obtener la referencia a la sección
-    section.scrollIntoView({ behavior: "smooth" }); // Realizar un desplazamiento suave hacia la sección
-    // scrollToSection("seccionBeneficios")
+    scrollToSection("seccionBeneficios")
 }
 
 const DireccionarAMenu = () => {
-    console.log("entro a la funcion menu")
-    const section = document.getElementById("menuHamburguesas"); // Obtener la referencia a la sección
-    section.scrollIntoView({ behavior: "smooth" }); // Realizar un desplazamiento suave hacia la sección
-
-    // scrollToSection("menuHamburguesas")
+    scrollToSection("menuHamburguesas")
 }
 
 function scrollToSection(sección) {
-    const section = document.getElementById(sección); // Obtener la referencia a la sección
+    const section = document.getElementById(sección);
     section.scrollIntoView({ behavior: "smooth" }); // Realizar un desplazamiento suave hacia la sección
 }
 

@@ -13,7 +13,8 @@
      /* color: white; */
      /*  */
  }
-    /* * {
+
+ /* * {
         color: white;
     } */
 
@@ -146,6 +147,7 @@
      margin: auto;
      width: 80rem;
  }
+
  .menu div {
      margin-top: 1rem;
      background-color: transparent;
@@ -183,6 +185,13 @@
 
  }
 
- /* .imgHamburguesa{
-    border-image: fill;
- } */
+ .imgHamburguesa {
+     margin: auto;
+ }
+
+ /*Otros*/
+
+ ul li {
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
+ }
