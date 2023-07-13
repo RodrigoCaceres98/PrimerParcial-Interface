@@ -18,8 +18,8 @@ const DireccionarAMenu = () => {
     scrollToSection("menuHamburguesas")
 }
 
-const scrollToSection = (sección) => {
-    const section = document.getElementById(sección);
+function scrollToSection(sección) {
+    const section = document.getElementById(sección); // Obtener la referencia a la sección
     section.scrollIntoView({ behavior: "smooth" }); // Realizar un desplazamiento suave hacia la sección
 }
 
