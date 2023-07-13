@@ -1,7 +1,7 @@
  @font-face {
-     font-family: "SignikaNegative";
-     src: local("SignikaNegative"),
-         url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Signika+Negative:wght@700&display=swap') format("opentype");
+     font-family: "Montserrat";
+     src: local("Montserrat"),
+         url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap') format("opentype");
  }
 
  body {
@@ -10,12 +10,19 @@
      background-size: cover;
      width: 100%;
      min-height: 100vh;
-     /* color: white; */
-     /*  */
  }
-    /* * {
-        color: white;
-    } */
+
+
+ .claro {
+     background-color: white !important;
+     color: black !important;
+     background-image: none;
+ }
+
+ * {
+     font-family: 'Montserrat', sans-serif;
+
+ }
 
  footer {
      border-top-style: dashed !important;
@@ -54,7 +61,7 @@
  /* button */
 
  #bntAction {
-     width: 15rem;
+     width: 10rem;
      height: 3rem;
      background-color: rgb(13 110 253 / 60%);
      ;
@@ -68,7 +75,7 @@
 
  /* text */
  #title {
-     font-family: cursive;
+
      font-size: 5rem;
  }
 
@@ -146,6 +153,7 @@
      margin: auto;
      width: 80rem;
  }
+
  .menu div {
      margin-top: 1rem;
      background-color: transparent;
@@ -161,9 +169,9 @@
  }
 
  /* colores */
- .claro {
+ /* .claro {
      background-color: white !important;
- }
+ } */
 
  .oscuro {
      background-color: rgb(21, 19, 19) !important;
@@ -183,6 +191,13 @@
 
  }
 
- /* .imgHamburguesa{
-    border-image: fill;
- } */
+ .imgHamburguesa {
+     margin: auto;
+ }
+
+ /*Otros*/
+
+ ul li {
+     margin-left: 0.6rem;
+     margin-top: 1rem;
+ }

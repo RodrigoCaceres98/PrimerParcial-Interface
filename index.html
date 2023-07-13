@@ -1,7 +1,6 @@
 <html>
 
 <head>
-    <title>Primer Parcial</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -12,29 +11,33 @@
 </head>
 
 <body>
-    <header class="p-2  ">
+    <header class="p-2 letraClara ">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class=" ms-1 container-fluid d-flex justify-content-between mx-5">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <img src="img/hamburguesa (1).png" width="45rem">
+                        <li class="nav-item mt-0">
+                            <img src="img/hamburguesa (1).png" width="60rem">
                         </li>
-                        <li class="nav-item ms-4 pt-2">
-                            <a class="nav-link active p-0 mb-0" aria-current="page" href="index.html">
-                                <p class="fontSizeP letraClara">Home</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item ms-4 pt-2" onclick="DireccionarABeneficios()">
-                            <a class="nav-link active p-0 mb-0" aria-current="page" href="#">
+                        <li class="nav-item " onclick="DireccionarABeneficios()">
+                            <button class="bg-transparent border-0" onclick="DireccionarABeneficios()">
                                 <p class="fontSizeP letraClara">Beneficios</p>
-                            </a>
+                            </button>
                         </li>
-                        <li class="nav-item ms-4 pt-2" onclick=" () => DireccionarAMenu()">
-                            <a class="nav-link active p-0 mb-0" aria-current="page" href="#">
+                        <li class="nav-item ">
+                            <button class="bg-transparent border-0" onclick="DireccionarAMenu()">
                                 <p class="fontSizeP letraClara">Menu</p>
-                            </a>
+                            </button>
+                        </li>
+                        <li class="nav-item ">
+                            <button class="bg-transparent border-0" onclick="DireccionarAFooter()">
+                                <p class="fontSizeP letraClara">Medios de contacto</p>
+                            </button>
+                        </li>
+                        <li class="nav-item ">
+                            <button class="bg-transparent border-0" onclick="NocturnoClaro()">
+                                <p class="fontSizeP letraClara">claro</p>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -45,21 +48,17 @@
     <section class="homeContainer">
         <div class="row me-0">
             <div class="col-6 ps-5 d-flex flex-column justify-content-center">
-                <h1 id="title" class="letraClara">Come las mejores hamburguesas del mercado</h1>
-                <h2 class="letraClara">Al alcance de tus manos a muy buen costo.</h2>
-                <!-- <h2 class="text-white">Calidad y precio</h2> -->
-                <!-- <h2 class="text-white">Nosotros le traemos la solucion</h2> -->
-                <p class=" pe-5 letraClara mb-0">Registrate y accede a ofertas excusivas de tu restaurante mas cercano
-                    desde
-                    tu perfil</p>
+                <h1 id="title" class="letraClara">Come las mejores hamburguesas </h1>
+                <h2 class="letraClara">Al alcance de tus manos </h2>
+                <p class=" pe-5 letraClara mb-0">Registrate y accede a ofertas excusivas en tu sucaursal mas cercana</p>
                 <!-- call to action -->
                 <div class="d-flex w-100 justify-content-center mt-5 me-5">
                     <button type="button" id="bntAction" class="btn btn-primary letraClara ms-5" data-toggle="modal"
-                        onclick="DireccionarAMenu()" data-target="#myModal">Menu Hamburguesas</button>
+                        onclick="DireccionarAMenu()" data-target="#myModal">Menu</button>
                     <!-- de aca vamos a la menu -->
                 </div>
             </div>
-            <div class="col-6 m-auto ">
+            <div class="col-6 m-auto d-flex">
                 <img class="rounded-circle imgHamburguesa"
                     src="https://offloadmedia.feverup.com/sevillasecreta.co/wp-content/uploads/2022/09/14140055/BurgerFoodPorn.jpg"
                     width="600">
@@ -70,35 +69,31 @@
 
     <!-- Beneficios -->
     <section id="seccionBeneficios" class="sectionBeneficios">
-        <p class="text-center letraClara display-4 "><strong><em>¿Por Que Comer Con Nosotros?</em></strong></p>
+        <p class="text-center letraClara display-4 "><strong><em>Tus Beneficios Con Nosotros</em></strong></p>
         <div class="beneficiosContainer">
             <div class="beneficios">
                 <img src="img/delivery.png">
                 <p class="text-uppercase titleCard letraClara">Delivery sin cargo</p>
-                <p class="letraClara">Contamos con este servcio en estas localidades de Hurlingham , Caseros, Ituzaingo,
-                    Castelar, Moron
+                <p class="letraClara">Hurlingham, Caseros, Ituzaingo,
+                    Castelar, Moron.
+                    Otras zonas con minimo de costo
                 </p>
             </div>
             <div class="beneficios">
                 <img src="img/burger.png">
                 <p class="text-uppercase titleCard letraClara">Promos Burgers</p>
-                <p class="letraClara">De los jueves a sabados tenes algunas hamburgesas con un 20% de descuento para que
-                    vengas a
-                    disfrutar con tus amigos
-                </p>
+                <p class="letraClara"> Jueves y domingos 20% OFF en hamburguesas seleccionadas </p>
             </div>
             <div class="beneficios">
                 <img src="img/PINTA.png">
                 <p class="text-uppercase titleCard letraClara">2x1 en cervezas</p>
-                <p class="letraClara">los dias Viernes y sabados de 20hs a 23hs podes apovechar esta excelente promo,
-                    en cualquier tipo de cerveza que tengamos en nuestro local
-                </p>
+                <p class="letraClara"> Viernes y sabados HAPPY HOUR de 19hs a 20hs </p>
             </div>
         </div>
     </section>
     <!-- Menu  -->
     <section id="menuHamburguesas" class="menu mx-5">
-        <p class="text-center letraClara display-4 mb-5 mt-4"><strong><em>Un poco de nuestras hamburguesas</em></strong>
+        <p class="text-center letraClara display-4 mb-3 mt-4"><strong><em>-Hamburguesas-</em></strong>
         </p>
         <div class="card">
             <div class="card-body d-flex p-2 ps-3">
@@ -156,30 +151,33 @@
             </div>
         </div>
     </section>
-    <footer>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.896249063138!2d-58.56707342497348!3d-34.60678495765899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9d6408488ff%3A0xda7bc562929e4ce5!2sEl%20Desembarco%20Caseros!5e0!3m2!1ses!2sar!4v1683998448607!5m2!1ses!2sar"
-            width="800" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        <div class="pedidoYa">
-            <img src="img/pedidoYa.png" alt="" width="200">
-        </div>
-        <div class="redes">
-            <div>
-                <img src="img/whatsapp.png" width="40">
-                <p class="letraClara m-auto ms-2">11-5269-6257</p>
+    <!-- <seccion cals> -->
+        <footer id="footer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.896249063138!2d-58.56707342497348!3d-34.60678495765899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9d6408488ff%3A0xda7bc562929e4ce5!2sEl%20Desembarco%20Caseros!5e0!3m2!1ses!2sar!4v1683998448607!5m2!1ses!2sar"
+                width="800" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="pedidoYa">
+                <img src="img/pedidoYa.png" alt="" width="200">
             </div>
-            <div class="my-3">
-                <img src="img/instagram.png" width="40">
-                <p class="letraClara m-auto ms-2">HamburgesasDelBajon</p>
+            <div class="redes">
+                <div>
+                    <img src="img/whatsapp.png" width="40">
+                    <p class="letraClara m-auto ms-2">11-5269-6257</p>
+                </div>
+                <div class="my-3">
+                    <img src="img/instagram.png" width="40">
+                    <p class="letraClara m-auto ms-2">HamburgesasDelBajon</p>
+                </div>
+                <div>
+                    <img src="img/facebook.png" width="40">
+                    <p class="letraClara m-auto ms-2">HamburgesasDelBajon</p>
+                </div>
             </div>
-            <div>
-                <img src="img/facebook.png" width="40">
-                <p class="letraClara m-auto ms-2">HamburgesasDelBajon</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    <!-- </seccion> -->
+
     <script src="script.js"></script>
 </body>
 
