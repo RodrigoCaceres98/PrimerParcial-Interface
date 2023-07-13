@@ -202,3 +202,10 @@
      margin-left: 0.6rem;
      margin-top: 1rem;
  }
+
+ @media (max-width: 1000px) {
+     .imgHamburguesa {
+         display: none;
+     }
+     
+ }
